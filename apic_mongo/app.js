@@ -24,6 +24,10 @@ mongoose.connect(
     connection_string, { useNewUrlParser: true, useUnifiedTopology: true }
 ).then(() => console.log('Database connected'))
 
+// Add
+app.get('/', function(req, res) {
+    res.send(app.js);
+});
 
 app.listen(port, () => {
     console.log('App is listening on ' + port);
